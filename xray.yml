@@ -1,0 +1,36 @@
+            - name: XRay Reporter
+  # You may pin to the exact commit or the version.
+  # uses: Dar1anMar1us/xray-reporter@a51f3334cfbc94df7656446f64e9be1f3fc0cd5b
+  uses: Dar1anMar1us/xray-reporter@v1.2
+  with:
+    # Path to cucumber.json result file
+    path: 
+    # Test Plan identifier
+    test-plan-id: # default is 
+    # Jira installation Url
+    jira-url: 
+    # Jira username
+    jira-username: # default is 
+    # Jira token or password
+    jira-password: 
+    # Jira token
+    jira-token: # optional
+    # Xray token
+    xray-token: # optional
+    # Test execution description (jira field `description`)
+    description: # optional
+    # Test execution summary (jira field `summary`)
+    summary: # optional
+    # A string containing a list of test environments separated by ';'
+    testEnvironments: # optional
+    # A string containing where the tests were executed. It will be set as Karate Env field.
+    cloud-env: # optional
+    # A string containing a list of affected versions separated by ';'. It will be set as Affects Version/s field.
+    affected-versions: # optional
+    # A string containing a list of labels separated by ';'. It will be set as Labels field.
+    labels: # optional
+    # Specify Jira User Id to set as assignee to the execution. Otherwise, the default user who do the JIRA Api call will be used.
+    assignee: # optional
+    # Specify debug mode. It adds more output. Take care, it can publish sensitive invormation if it's not properly cypher in your env variables
+    debug: # optional
+          
